@@ -1,0 +1,5 @@
+.home__bg {
+  position: relative;
+  background: rgba(25, 29, 41, 1) url("./Background.png");
+  height: 1117px;
+}

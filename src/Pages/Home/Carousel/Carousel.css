@@ -1,0 +1,29 @@
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #ffffff;
+  color: rgba(157, 254, 0, 1);
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  padding: 17px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.cast__carousel {
+  padding: 16px 16px 24px;
+  border: 3px solid rgba(132, 247, 41, 0.7);
+  border-radius: 7.56px 7.56px 37% 7.56px / 7.56px 7.56px 36% 7.56px;
+  height: 296px;
+  width: 290px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.carousel__img {
+  height: 216px;
+  width: 258px;
+  border-radius: 3.78px;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import bubble from "../../../assets/Home_page/bubble.png";
 import ellipse from "../../../assets/Home_page/ellipse_76.png";
 import gun from "../../../assets/Home_page/gun.png";
@@ -7,9 +7,22 @@ import pill from "../../../assets/Home_page/pill.png";
 import play from "../../../assets/Home_page/play_btn.png";
 import portal from "../../../assets/Home_page/portal.png";
 import Header from '../../Shared/Header/Header';
+import Carousel from '../Carousel/Carousel';
 import "./Home.css";
 
 const Home = () => {
+
+  const [casts, setCasts] = useState([]);
+
+  useEffect(()=>{
+    fetch("https://rickandmortyapi.com/api/character")
+      .then((res) => res.json())
+      .then((data) => setCasts(data.results));
+  },[])
+
+  console.log(casts)
+
+
     return (
       <div>
         <div className="home__bg">
@@ -60,8 +73,15 @@ const Home = () => {
               dimensions.
             </p>
           </div>
+          <div className='home__cast'>
+            <div className="cast__text">
+              <p>Meet the cast</p>
+              <button className="view__btn">View All</button>
+            </div>
+            <Carousel elements={casts}/>
+          </div>
         </div>
-        <div className='spiral__bg'>
+        <div className="spiral__bg">
           <img src={star} alt="" />
         </div>
       </div>

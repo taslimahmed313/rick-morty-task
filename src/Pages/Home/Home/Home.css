@@ -74,6 +74,19 @@
     rgba(20, 217, 229, 1) 100%
   );
 }
+.home__cast {
+  padding: 0 100px;
+}
+.cast__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view__btn {
+  border: 1px solid rgba(157, 254, 0, 1);
+  padding: 10px 24px;
+  color: rgba(255, 255, 255, 1);
+}
 .spiral__bg {
   position: relative;
   background: rgba(25, 29, 41, 1)

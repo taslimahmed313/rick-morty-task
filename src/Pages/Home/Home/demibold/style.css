@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Travels';
+    src: local('TT Travels Demi Bold'), local('TT-Travels-Demi-Bold'),
+        url('TTTravels-DemiBold.woff2') format('woff2'),
+        url('TTTravels-DemiBold.woff') format('woff'),
+        url('TTTravels-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }

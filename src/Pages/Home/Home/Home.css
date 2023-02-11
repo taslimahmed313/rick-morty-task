@@ -12,6 +12,13 @@
     url("./extra_bold//TTTravels-ExtraBold.woff") format("woff"),
     url("./extra_bold//TTTravels-ExtraBold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "TT Travels";
+  src: local("TT Travels Demi Bold"), local("TT-Travels-Demi-Bold"),
+    url("./demibold/TTTravels-DemiBold.woff2") format("woff2"),
+    url("./demibold/TTTravels-DemiBold.woff") format("woff"),
+    url("./demibold/TTTravels-DemiBold.ttf") format("truetype");
+}
 
 .home__bg {
   position: relative;
@@ -20,7 +27,7 @@
   height: 1117px;
 }
 .home__brand-name {
-  padding-top: 127px;
+  padding-top: 155px;
   line-height: 1.2;
 }
 
@@ -34,6 +41,13 @@
   font-weight: 800;
   font-style: normal;
 }
+.demi__bold {
+  font-family: "TT Travels";
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2;
+  color: rgba(20, 217, 229, 1);
+}
 .text__gradient {
   background: linear-gradient(
     to right,
@@ -42,4 +56,21 @@
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.play__btn {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 203px;
+  height: 58px;
+  padding: 17px 25px;
+  border-radius: 100px;
+  line-height: 1.2;
+  font-size: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(157, 254, 0, 1) 0%,
+    rgba(20, 217, 229, 1) 100%
+  );
 }

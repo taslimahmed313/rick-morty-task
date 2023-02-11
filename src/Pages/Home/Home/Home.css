@@ -74,3 +74,11 @@
     rgba(20, 217, 229, 1) 100%
   );
 }
+.spiral__bg {
+  position: relative;
+  background: rgba(25, 29, 41, 1)
+    url("../../../assets/Home_page/home_spiral.png");
+  height: 588px;
+  background-repeat: no-repeat;
+  background-position: right;
+}

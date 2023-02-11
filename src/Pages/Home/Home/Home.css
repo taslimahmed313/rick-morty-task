@@ -24,7 +24,8 @@
   position: relative;
   background: rgba(25, 29, 41, 1)
     url("../../../assets/Home_page/home_background.png");
-  height: 1117px;
+  /* height: 1117px; */
+  background-repeat: no-repeat;
 }
 .home__brand-name {
   padding-top: 155px;
@@ -76,16 +77,33 @@
 }
 .home__cast {
   padding: 0 100px;
+  margin-top: 80px;
 }
 .cast__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 28px;
+}
+.cast__text p {
+  font-size: 24px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 1);
 }
 .view__btn {
   border: 1px solid rgba(157, 254, 0, 1);
   padding: 10px 24px;
   color: rgba(255, 255, 255, 1);
+}
+.home__episode {
+  padding: 0 100px;
+  margin-top: 107px;
+}
+.home__episode p {
+  font-size: 24px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 28px;
 }
 .spiral__bg {
   position: relative;

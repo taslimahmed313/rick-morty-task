@@ -13,6 +13,8 @@ import "./Home.css";
 const Home = () => {
 
   const [casts, setCasts] = useState([]);
+  const [episodes, setEpisodes] = useState([]);
+  const [locations, setLocations] = useState([]);
 
   useEffect(()=>{
     fetch("https://rickandmortyapi.com/api/character")
@@ -20,7 +22,19 @@ const Home = () => {
       .then((data) => setCasts(data.results));
   },[])
 
-  console.log(casts)
+  useEffect(() => {
+    fetch("https://rickandmortyapi.com/api/episode")
+      .then((res) => res.json())
+      .then((data) => setEpisodes(data.results));
+  }, []);
+
+  useEffect(() => {
+    fetch("https://rickandmortyapi.com/api/episode")
+      .then((res) => res.json())
+      .then((data) => setLocations(data.results));
+  }, []);
+
+  console.log(episodes)
 
 
     return (
@@ -73,16 +87,28 @@ const Home = () => {
               dimensions.
             </p>
           </div>
-          <div className='home__cast'>
+          <div className="home__cast">
             <div className="cast__text">
               <p>Meet the cast</p>
               <button className="view__btn">View All</button>
             </div>
-            <Carousel elements={casts}/>
+            <Carousel casts={casts} />
           </div>
-        </div>
-        <div className="spiral__bg">
-          <img src={star} alt="" />
+          <div className="spiral__bg">
+            <img
+              className=" absolute bottom-[250px] left-[80px]"
+              src={star}
+              alt=""
+            />
+            <div className="home__episode">
+                <p>Episodes</p>
+              <Carousel episodes={episodes} />
+            </div>
+            <div className="home__episode">
+                <p>Episodes</p>
+              <Carousel locations={locations} />
+            </div>
+          </div>
         </div>
       </div>
     );

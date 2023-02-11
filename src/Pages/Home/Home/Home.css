@@ -1,5 +1,45 @@
+@font-face {
+  font-family: "TT Travels";
+  src: local("TT Travels Bold Italic"), local("TT-Travels-Bold-Italic"),
+    url("./font_italic/TTTravels-BoldItalic.woff2") format("woff2"),
+    url("./font_italic/TTTravels-BoldItalic.woff") format("woff"),
+    url("./font_italic/TTTravels-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Travels";
+  src: local("TT Travels Extra Bold"), local("TT-Travels-Extra-Bold"),
+    url("./extra_bold/TTTravels-ExtraBold.woff2") format("woff2"),
+    url("./extra_bold//TTTravels-ExtraBold.woff") format("woff"),
+    url("./extra_bold//TTTravels-ExtraBold.ttf") format("truetype");
+}
+
 .home__bg {
   position: relative;
-  background: rgba(25, 29, 41, 1) url("./Background.png");
+  background: rgba(25, 29, 41, 1)
+    url("../../../assets/Home_page/home_background.png");
   height: 1117px;
+}
+.home__brand-name {
+  padding-top: 127px;
+  line-height: 1.2;
+}
+
+.bold__italic {
+  font-family: "TT Travels";
+  font-weight: 700;
+  font-style: italic;
+}
+.extra__bold {
+  font-family: "TT Travels";
+  font-weight: 800;
+  font-style: normal;
+}
+.text__gradient {
+  background: linear-gradient(
+    to right,
+    rgba(157, 254, 0, 1) 0%,
+    rgba(20, 217, 229, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

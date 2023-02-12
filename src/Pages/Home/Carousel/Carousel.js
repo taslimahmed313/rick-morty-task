@@ -41,7 +41,7 @@ const Carousel = ({ casts, episodes, locations }) => {
           navigation={true}
           modules={[Navigation, Pagination, Autoplay]}
           className="mySwiper"
-          slidesPerview={1.2}
+          slidesPerView={1.2}
           spaceBetween={6}
           breakpoints={{
             300: {
@@ -68,7 +68,7 @@ const Carousel = ({ casts, episodes, locations }) => {
           navigation={true}
           modules={[Navigation, Pagination, Autoplay]}
           className="mySwiper"
-          slidesPerview={1.2}
+          slidesPerView={1.2}
           spaceBetween={6}
           breakpoints={{
             768: {

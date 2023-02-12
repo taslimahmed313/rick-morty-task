@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import bubble from "../../../assets/Home_page/bubble.png";
 import ellipse from "../../../assets/Home_page/ellipse_76.png";
 import gun from "../../../assets/Home_page/gun.png";
@@ -86,7 +87,7 @@ const Home = () => {
               {" "}
               <img src={play} alt="" /> Watch Now
             </a>
-            <p className="demi__bold text-[14px] w-[364px]">
+            <p className="demi__bold text-[14px] lg:w-[364px] w-full">
               Brilliant but boozy scientist Rick hijacks his fretful teenage
               grandson, Morty, for wild escapades in other worlds and alternate
               dimensions.
@@ -95,14 +96,14 @@ const Home = () => {
           <div className="home__cast">
             <div className="cast__text">
               <p>Meet the cast</p>
-              <button className="view__btn">View All</button>
+              <Link to="/casts" className="view__btn">View All</Link>
             </div>
             <Carousel casts={casts} />
           </div>
           <div className="">
-            <img className="hidden lg:block absolute top-[1050px] right-0" src={spiral} alt="" />
+            <img className="hidden lg:block absolute top-[1090px] right-0" src={spiral} alt="" />
             <img
-              className=" hidden lg:block absolute bottom-[250px] left-[80px]"
+              className=" hidden lg:block absolute bottom-[257px] left-[80px]"
               src={star}
               alt=""
             />
@@ -110,8 +111,8 @@ const Home = () => {
               <p>Episodes</p>
               <Carousel episodes={episodes} />
             </div>
-            <div className="home__common__section">
-              <p>Episodes</p>
+            <div className="home__common__section lg:pb-[79px]">
+              <p>Locations</p>
               <Carousel locations={locations} />
             </div>
           </div>

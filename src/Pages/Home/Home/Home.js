@@ -101,9 +101,9 @@ const Home = () => {
             <Carousel casts={casts} />
           </div>
           <div className="">
-            <img className="hidden lg:block absolute top-[1090px] right-0" src={spiral} alt="" />
+            <img className="hidden lg:block absolute top-[1086px] right-0" src={spiral} alt="" />
             <img
-              className=" hidden lg:block absolute bottom-[257px] left-[80px]"
+              className=" hidden lg:block absolute bottom-[257.61px] left-[80px]"
               src={star}
               alt=""
             />

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../Shared/Header/Header';
 import "./Casts.css";
 
@@ -18,8 +19,10 @@ const Casts = () => {
           <div className="grid lg:grid-cols-5 grid-cols-2 lg:px-[100px] px-[21px] lg:gap-[67px] gap-[33px]">
             {casts.map((cast) => (
               <div key={cast.id} className="cast__card">
-                <img src={cast.image} alt="" className="" />
-                <h3>{cast.name}</h3>
+                <Link to={`/cast-details/${cast.id}`}>
+                  <img src={cast.image} alt="" className="" />
+                  <h3>{cast.name}</h3>
+                </Link>
               </div>
             ))}
           </div>

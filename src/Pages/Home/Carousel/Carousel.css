@@ -42,6 +42,31 @@
   border-radius: 7.56px 7.56px 50% 7.56px / 7.56px 7.56px 50% 7.56px;
   background-color: rgba(255, 255, 255, 0.05);
 }
+@media (max-width: 576px) {
+  .cast__carousel {
+    width: 134.22px;
+    height: 137px;
+    padding: 7.41px;
+  }
+  .cast__carousel h3 {
+    font-size: 10px;
+    margin: 11.5px 0;
+  }
+  .carousel__img {
+    width: 119.41px;
+    height: 99.97px;
+  }
+  .common__carousel {
+    height: 40.5px;
+    width: 152px;
+  }
+  .common__carousel h3 {
+    font-size: 16px;
+  }
+  .common__carousel h4 {
+    font-size: 12px;
+  }
+}
 .common__carousel h4 {
   font-size: 20px;
   line-height: 1.2;

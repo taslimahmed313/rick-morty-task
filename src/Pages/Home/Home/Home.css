@@ -90,26 +90,44 @@
   line-height: 1.2;
   color: rgba(255, 255, 255, 1);
 }
+
 .view__btn {
   border: 1px solid rgba(157, 254, 0, 1);
   padding: 10px 24px;
   color: rgba(255, 255, 255, 1);
 }
-.home__episode {
+.home__common__section {
   padding: 0 100px;
   margin-top: 107px;
 }
-.home__episode p {
+.home__common__section p {
   font-size: 24px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 1);
   padding-bottom: 28px;
 }
 .spiral__bg {
-  position: relative;
+  /* position: relative; */
   background: rgba(25, 29, 41, 1)
     url("../../../assets/Home_page/home_spiral.png");
   height: 588px;
   background-repeat: no-repeat;
   background-position: right;
+}
+@media (max-width: 576px) {
+  .home__brand-name {
+    padding-top: 40px;
+  }
+  .home__cast {
+    padding: 0 21px;
+  }
+  .cast__text {
+    flex-direction: column-reverse;
+  }
+  .home__common__section {
+    padding: 0px 0px;
+  }
+  .spiral__bg {
+    /* display: none; */
+  }
 }

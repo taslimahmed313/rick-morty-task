@@ -31,7 +31,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/episode")
+    fetch("https://rickandmortyapi.com/api/location")
       .then((res) => res.json())
       .then((data) => setLocations(data.results));
   }, []);
@@ -96,12 +96,18 @@ const Home = () => {
           <div className="home__cast">
             <div className="cast__text">
               <p>Meet the cast</p>
-              <Link to="/casts" className="view__btn">View All</Link>
+              <Link to="/casts" className="view__btn">
+                View All
+              </Link>
             </div>
             <Carousel casts={casts} />
           </div>
           <div className="">
-            <img className="hidden lg:block absolute top-[1086px] right-0" src={spiral} alt="" />
+            <img
+              className="hidden lg:block absolute top-[1086px] right-0"
+              src={spiral}
+              alt=""
+            />
             <img
               className=" hidden lg:block absolute bottom-[257.61px] left-[80px]"
               src={star}
@@ -111,7 +117,7 @@ const Home = () => {
               <p>Episodes</p>
               <Carousel episodes={episodes} />
             </div>
-            <div className="home__common__section lg:pb-[79px]">
+            <div className="home__common__section">
               <p>Locations</p>
               <Carousel locations={locations} />
             </div>

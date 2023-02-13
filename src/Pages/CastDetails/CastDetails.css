@@ -3,3 +3,26 @@
     url("../../assets/Cast_details/details_background.png");
   height: 1397px;
 }
+.cast__personal-info h2 {
+  color: rgba(20, 217, 229, 1);
+  line-height: 1.2;
+  font-weight: 600;
+}
+.cast__personal-info h3 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  line-height: 1.2;
+  font-weight: 800;
+  color: rgba(21, 191, 253, 0.2);
+  /* background: linear-gradient(
+    to right,
+    rgba(132, 247, 41, 0.7) 0%,
+    rgba(21, 191, 253, 0.7) 100%
+  ); */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2.11px;
+}
+.cast-details__bg {
+  background-color: rgba(255, 255, 255, 0.05);
+}

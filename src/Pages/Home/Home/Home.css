@@ -115,6 +115,10 @@
   background-position: right;
 }
 @media (max-width: 576px) {
+  .home__bg {
+    height: auto;
+    padding-bottom: 70px;
+  }
   .home__brand-name {
     padding-top: 40px;
   }

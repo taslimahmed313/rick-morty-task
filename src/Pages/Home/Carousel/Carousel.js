@@ -15,7 +15,6 @@ const Carousel = ({ casts, episodes, locations }) => {
           modules={[Navigation, Pagination, Autoplay]}
           className="mySwiper"
           slidesPerView={1.2}
-          spaceBetween={6}
           breakpoints={{
             300: {
               slidesPerView: 2.3,
@@ -23,14 +22,25 @@ const Carousel = ({ casts, episodes, locations }) => {
             },
             768: {
               slidesPerView: 5.35,
+              spaceBetween: 32,
             },
           }}
         >
           {casts.map((cast, i) => (
             <SwiperSlide key={i}>
               <div className="cast__carousel">
-                <img src={cast.image} alt="" className="carousel__img" />
-                <h3>{cast.name}</h3>
+                <img
+                  src={cast.image}
+                  alt=""
+                  className="lg:w-[258px] w-full lg:h-[216px] h-[115px] lg:rounded 
+                        rounded-sm"
+                />
+                <h3
+                  className="lg:text-[16px] lg:py-6 py-[15px]
+                         text-white text-[10px]"
+                >
+                  {cast.name}
+                </h3>
               </div>
             </SwiperSlide>
           ))}
@@ -42,7 +52,6 @@ const Carousel = ({ casts, episodes, locations }) => {
           modules={[Navigation, Pagination, Autoplay]}
           className="mySwiper"
           slidesPerView={1.2}
-          spaceBetween={6}
           breakpoints={{
             300: {
               slidesPerView: 2.3,
@@ -50,14 +59,19 @@ const Carousel = ({ casts, episodes, locations }) => {
             },
             768: {
               slidesPerView: 4.35,
+              spaceBetween: 32,
             },
           }}
         >
           {episodes.map((episode, i) => (
             <SwiperSlide key={i}>
-              <div className="common__carousel">
-                <h4>{episode.episode}</h4>
-                <h3>{episode.name}</h3>
+              <div className="common__carousel lg:w-[] lg:py-5 py-2 lg:px-6 px-[10px] text-white">
+                <h4 className=" h_4_weight lg:text-base text-[10px]">
+                  {episode.episode}
+                </h4>
+                <h3 className="h_3_weight lg:text-6 text-[16px]">
+                  {episode.name}
+                </h3>
               </div>
             </SwiperSlide>
           ))}
@@ -69,10 +83,14 @@ const Carousel = ({ casts, episodes, locations }) => {
           modules={[Navigation, Pagination, Autoplay]}
           className="mySwiper"
           slidesPerView={1.2}
-          spaceBetween={6}
           breakpoints={{
+            300: {
+              slidesPerView: 2.3,
+              spaceBetween: 14.81,
+            },
             768: {
               slidesPerView: 4.35,
+              spaceBetween: 32,
             },
           }}
         >

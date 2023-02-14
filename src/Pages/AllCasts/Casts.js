@@ -34,11 +34,12 @@ const Casts = () => {
                       <img
                         src={cast.image}
                         alt=""
-                        className="lg:w-[258px] w-full lg:h-[216px] h-[115px] lg:rounded rounded-sm"
+                        className="lg:w-[258px] w-full lg:h-[216px] h-[115px] lg:rounded 
+                        rounded-sm"
                       />
                       <h3
-                        className="lg:text-[16px] lg:mt-6 mt-[15px] lg:mb-[0px] mb-[6.5px] 
-                  text-[10px]"
+                        className="lg:text-[16px] lg:mt-6 mt-[15px] lg:mb-[0px] mb-[6.5px]
+                         text-white text-[10px]"
                       >
                         {cast.name}
                       </h3>

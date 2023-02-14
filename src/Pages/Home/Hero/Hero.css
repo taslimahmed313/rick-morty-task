@@ -1,0 +1,46 @@
+.home__brand-name {
+  padding-top: 203px;
+  line-height: 1.2;
+}
+
+.bold__italic {
+  font-family: "TT Travels";
+  font-weight: 700;
+  font-style: italic;
+}
+.extra__bold {
+  font-family: "TT Travels";
+  font-weight: 800;
+  font-style: normal;
+}
+.demi__bold {
+  font-family: "TT Travels";
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2;
+  color: rgba(20, 217, 229, 1);
+}
+.text__gradient {
+  background: linear-gradient(
+    to right,
+    rgba(157, 254, 0, 1) 0%,
+    rgba(20, 217, 229, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.play__btn {
+  color: white;
+  border-radius: 100px;
+  line-height: 1.2;
+  background: linear-gradient(
+    to right,
+    rgba(157, 254, 0, 1) 0%,
+    rgba(20, 217, 229, 1) 100%
+  );
+}
+@media (max-width: 576px) {
+  .home__brand-name {
+    padding-top: 40px;
+  }
+}

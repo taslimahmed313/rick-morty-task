@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import bubble from "../../../assets/Home_page/bubble.png";
-import ellipse from "../../../assets/Home_page/ellipse_76.png";
-import gun from "../../../assets/Home_page/gun.png";
+import ellipse_bottom from "../../../assets/Home_page/ellipse_75.png";
+import ellipse_top from "../../../assets/Home_page/ellipse_76.png";
 import spiral from "../../../assets/Home_page/home_spiral.png";
 import star from "../../../assets/Home_page/home_star.png";
-import pill from "../../../assets/Home_page/pill.png";
-import play from "../../../assets/Home_page/play_btn.png";
-import portal from "../../../assets/Home_page/portal.png";
+
 import Header from '../../Shared/Header/Header';
 import Carousel from '../Carousel/Carousel';
+import Hero from '../Hero/Hero';
 import "./Home.css";
 
 const Home = () => {
@@ -41,62 +39,29 @@ const Home = () => {
 
     return (
       <div>
-        <div className="home__bg">
+        <div className="home__bg lg:pb-[80px] pb-[45px] lg:mx-0 px-[21px]">
           <Header />
           <img
             className=" absolute top-0 right-0 w-[356px] h-[356px] hidden lg:block"
-            src={ellipse}
+            src={ellipse_top}
+            alt=""
+          />
+          <img
+            className=" absolute bottom-0 left-0 w-[356px] h-[356px] hidden lg:block"
+            src={ellipse_bottom}
             alt=""
           />
 
-          <div className="uppercase lg:text-[128px] text-[40px] lg:w-[1075px] w-full mx-auto home__brand-name">
-            <img
-              className=" absolute left-[320px] top-[183px] lg:h-[214px] lg:w-[214px] w-[52.43px] h-[52.43px]"
-              src={bubble}
-              alt=""
-            />
-            <div className=" flex">
-              <span className="text-white bold__italic">The</span>{" "}
-              <img
-                className="lg:w-[225px] lg:h-[145px] w-[68.62px] h-[44.22px]"
-                src={portal}
-                alt=""
-              />{" "}
-              <span className="text__gradient extra__bold">Rick &</span>
-            </div>
-            <img
-              className=" absolute right-[505px] top-[251px] h-[10px] w-[50px] hidden lg:block"
-              src={pill}
-              alt=""
-            />
-            <span className="text__gradient extra__bold">MORTY</span>{" "}
-            <span className="text-white bold__italic">WIKI</span>
-            <img
-              className=" absolute right-[256px] top-[311px] lg:h-[332px] lg:w-[319px] w-[119px] h[124px]"
-              src={gun}
-              alt=""
-            />
-          </div>
-          <div className="flex lg:gap-[64px] lg:justify-center lg:items-center lg:flex-row flex-col-reverse">
-            <a
-              href="https://youtu.be/KQ9Cgdsa9tc"
-              className="play__btn demi__bold"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <img src={play} alt="" /> Watch Now
-            </a>
-            <p className="demi__bold text-[14px] lg:w-[364px] w-full">
-              Brilliant but boozy scientist Rick hijacks his fretful teenage
-              grandson, Morty, for wild escapades in other worlds and alternate
-              dimensions.
-            </p>
-          </div>
-          <div className="home__cast">
-            <div className="cast__text">
-              <p>Meet the cast</p>
-              <Link to="/casts" className="view__btn">
+          <Hero />
+
+          <div className="lg:px-[100px] lg:mt-[93px] mt-[55px]">
+            <div className="flex justify-between items-center lg:pb-[28px] pb-[17px]">
+              <p className="lg:text-2xl text-base text-white">Meet the cast</p>
+              <Link
+                to="/casts"
+                className="view__btn lg:py-[10px] py-[6px] lg:px-[24px] px-[16px]
+               rounded-lg text-white lg:text-[18px] text-[8px] "
+              >
                 View All
               </Link>
             </div>
@@ -113,12 +78,16 @@ const Home = () => {
               src={star}
               alt=""
             />
-            <div className="home__common__section">
-              <p>Episodes</p>
+            <div className="lg:px-[100px] lg:pt-[107px] pt-8">
+              <p className=" lg:text-xl text-base text-white lg:pb-7 pb-[21px]">
+                Episodes
+              </p>
               <Carousel episodes={episodes} />
             </div>
-            <div className="home__common__section">
-              <p>Locations</p>
+            <div className="lg:px-[100px] lg:pt-[107px] pt-8">
+              <p className=" lg:text-xl text-base text-white lg:pb-7 pb-[21px]">
+                Locations
+              </p>
               <Carousel locations={locations} />
             </div>
           </div>

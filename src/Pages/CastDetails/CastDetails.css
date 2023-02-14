@@ -26,3 +26,21 @@
 .cast-details__bg {
   background-color: rgba(255, 255, 255, 0.05);
 }
+.border__right {
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(
+      -45deg,
+      rgba(132, 247, 41, 0.7),
+      rgba(21, 191, 253, 0.7)
+    )
+    1;
+}
+.border__regular {
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      -45deg,
+      rgba(132, 247, 41, 0.7),
+      rgba(21, 191, 253, 0.7)
+    )
+    1;
+}

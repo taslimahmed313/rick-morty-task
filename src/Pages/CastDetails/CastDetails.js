@@ -8,6 +8,9 @@ import origin_img from "../../assets/Cast_details/origin.png";
 import redirect_img from "../../assets/Cast_details/redirect.png";
 import species_img from "../../assets/Cast_details/species.png";
 import status_img from "../../assets/Cast_details/status.png";
+import ellipse_bottom from "../../assets/Home_page/ellipse_75.png";
+import ellipse_top from "../../assets/Home_page/ellipse_76.png";
+import star from "../../assets/Home_page/home_star.png";
 import Header from '../Shared/Header/Header';
 import "./CastDetails.css";
 
@@ -15,8 +18,23 @@ const CastDetails = () => {
     const cast = useLoaderData()
     console.log(cast)
     return (
-      <div className="castDetails__bg">
+      <div className="castDetails__bg lg:pb-86px pb-10 relative">
         <Header />
+        <img
+          className=" hidden lg:block w-[90%] rotate-180 absolute bottom-[400.61px] left-[80px]"
+          src={star}
+          alt=""
+        />
+        <img
+          className=" absolute top-0 right-0 w-[356px] h-[356px] hidden lg:block"
+          src={ellipse_top}
+          alt=""
+        />
+        <img
+          className=" absolute bottom-0 left-0 w-[356px] h-[356px] hidden lg:block"
+          src={ellipse_bottom}
+          alt=""
+        />
         <div
           className="lg:pt-[146px] pt-10 lg:px-[100px] px-[21px]
          grid lg:grid-cols-2 lg:items-center"
@@ -89,7 +107,10 @@ const CastDetails = () => {
                 <h4 className="lg:text-[40px] text-[16px]">{cast.gender}</h4>
               </div>
             </div>
-            <div className="cast-details__bg border__regular lg:mt-10 mt-[15px] lg:px-8 px-[14px] lg:py-4 py-2">
+            <div
+              className="cast-details__bg border__regular lg:mt-10 mt-[15px] lg:px-8
+             px-[14px] lg:py-4 py-2"
+            >
               <img
                 className="lg:w-12 lg:h-12 w-5 h-5"
                 src={origin_img}
@@ -105,7 +126,10 @@ const CastDetails = () => {
                 />
               </div>
             </div>
-            <div className="cast-details__bg border__regular lg:mt-10 mt-[15px] lg:px-8 px-[14px] lg:py-4 py-2">
+            <div
+              className="cast-details__bg border__regular lg:mt-10 mt-[15px] lg:px-8 
+            px-[14px] lg:py-4 py-2"
+            >
               <img
                 className="lg:w-12 lg:h-12 w-5 h-5"
                 src={location_img}
@@ -123,7 +147,10 @@ const CastDetails = () => {
                 />
               </div>
             </div>
-            <div className="cast-details__bg border__regular lg:mt-10 mt-[19px] lg:px-8 px-[14px] lg:py-4 py-2">
+            <div
+              className="cast-details__bg border__regular lg:mt-10 mt-[19px] lg:px-8 
+            px-[14px] lg:py-4 py-2"
+            >
               <img
                 className="lg:w-12 lg:h-12 w-5 h-5"
                 src={episode_img}
@@ -134,14 +161,17 @@ const CastDetails = () => {
                 src={episodes}
                 alt=""
               />
-              <div className="flex items-center justify-between">
-                <p className="lg:text-[40px] text-[16px]">{cast.origin.name}</p>
-                <img
-                  className="lg:w-8 lg:h-8 w-4 h-4"
-                  src={redirect_img}
-                  alt=""
-                />
-              </div>
+              <ul className="lg:mt-7">
+                <li className="lg:text-[40px] text-[16px]">Pilot</li>
+                <li className="lg:text-[40px] text-[16px]">Lawnmower Dog</li>
+                <li className="lg:text-[40px] text-[16px]">Anatomy Park</li>
+                <li className="lg:text-[40px] text-[16px]">
+                  M. Night Shaym Alliens!
+                </li>
+                <li className="lg:text-[40px] text-[16px]">
+                  Meeseeks And Destroy
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ellipse_bottom from "../../assets/Home_page/ellipse_75.png";
 import ellipse_top from "../../assets/Home_page/ellipse_76.png";
+import star from "../../assets/Home_page/home_star.png";
 import Header from '../Shared/Header/Header';
 import "./Casts.css";
 
@@ -17,6 +18,11 @@ const Casts = () => {
     return (
       <div className="casts__bg lg:pb-[156px] pb-[114px] relative">
         <Header />
+        <img
+          className=" hidden lg:block w-[90%] rotate-180 absolute top-[600.61px] left-[80px]"
+          src={star}
+          alt=""
+        />
         <img
           className=" absolute top-0 right-0 w-[356px] h-[356px] hidden lg:block"
           src={ellipse_top}

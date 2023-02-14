@@ -1,19 +1,11 @@
 .casts__bg {
-  /* position: relative; */
   background: rgba(25, 29, 41, 1) url("../../assets/Cast/cast_background.png");
-  /* height: 1511px; */
-  /* background-repeat: no-repeat; */
 }
 .cast__page-title {
   color: rgba(20, 217, 229, 1);
   line-height: 1.2;
 }
 .cast__card {
-  /* padding: 16px 16px 0px; */
-  /* border: 1px solid rgba(132, 247, 41, 0.7);
-  border-radius: 7.56px 7.56px 30% 7.56px / 7.56px 7.56px 30% 7.56px; */
-  /* height: 296px;
-  width: 290px; */
   border: 1px solid transparent;
   border-image: linear-gradient(
       -45deg,

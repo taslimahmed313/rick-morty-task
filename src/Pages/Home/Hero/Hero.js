@@ -10,8 +10,8 @@ const Hero = () => {
     return (
       <div>
         <div
-          className="home__brand-name uppercase lg:text-[128px] text-[40px] lg:w-[1075px]
-       w-full mx-auto"
+          className="home__brand-name uppercase lg:text-[128px] text-[40px] lg:w-[1000px] w-full
+        mx-auto"
         >
           <img
             className=" absolute lg:left-[365px] lg:top-[182px] lg:h-[214.6px] lg:w-[214.6px] 
@@ -37,7 +37,7 @@ const Hero = () => {
           <span className="text-white bold__italic">WIKI</span>
           <img
             className=" absolute lg:right-[256px] lg:top-[311px] top-[182px]
-             right-[0px] lg:h-[331.98px] lg:w-[318.91px] w-[119px] h[124px]"
+             right-[0] lg:h-[331.98px] lg:w-[318.91px] w-[119px] h[124px]"
             src={gun}
             alt=""
           />

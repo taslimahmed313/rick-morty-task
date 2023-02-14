@@ -74,7 +74,7 @@ const Home = () => {
               alt=""
             />
             <img
-              className=" hidden lg:block absolute bottom-[257.61px] left-[80px]"
+              className=" hidden lg:block w-[90%] absolute bottom-[257.61px] left-[80px]"
               src={star}
               alt=""
             />

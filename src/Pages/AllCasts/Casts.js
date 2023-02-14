@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import ellipse_bottom from "../../assets/Home_page/ellipse_75.png";
+import ellipse_top from "../../assets/Home_page/ellipse_76.png";
 import Header from '../Shared/Header/Header';
 import "./Casts.css";
 
@@ -13,10 +15,23 @@ const Casts = () => {
     },[])
     console.log(casts)
     return (
-      <div className="casts__bg">
+      <div className="casts__bg lg:pb-[156px] pb-[114px] relative">
         <Header />
-        <div className=" lg:pb-[156px]">
-          <h2 className="cast__page-title lg:mt-[110px] lg:ml-[100px] lg:mb-[45px]">
+        <img
+          className=" absolute top-0 right-0 w-[356px] h-[356px] hidden lg:block"
+          src={ellipse_top}
+          alt=""
+        />
+        <img
+          className=" absolute bottom-0 left-0 w-[356px] h-[356px] hidden lg:block"
+          src={ellipse_bottom}
+          alt=""
+        />
+        <div className=" ">
+          <h2
+            className="cast__page-title lg:text-[64px] text-[16px] lg:mt-[110px] mt-[62px] 
+          lg:px-[100px] lg:mb-[45px] mb-7 px-[22px]"
+          >
             The Cast
           </h2>
           <div

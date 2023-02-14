@@ -6,14 +6,30 @@
 }
 .cast__page-title {
   color: rgba(20, 217, 229, 1);
-  font-size: 64px;
   line-height: 1.2;
 }
 .cast__card {
   /* padding: 16px 16px 0px; */
-  border: 1px solid rgba(132, 247, 41, 0.7);
-  border-radius: 7.56px 7.56px 30% 7.56px / 7.56px 7.56px 30% 7.56px;
+  /* border: 1px solid rgba(132, 247, 41, 0.7);
+  border-radius: 7.56px 7.56px 30% 7.56px / 7.56px 7.56px 30% 7.56px; */
   /* height: 296px;
   width: 290px; */
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      -45deg,
+      rgba(132, 247, 41, 0.7),
+      rgba(21, 191, 253, 0.7)
+    )
+    1;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 0,
+    100% 83%,
+    73% 100%,
+    20% 100%,
+    0 100%,
+    0 0
+  );
   background-color: rgba(255, 255, 255, 0.05);
 }

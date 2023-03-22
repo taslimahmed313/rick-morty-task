@@ -33,7 +33,7 @@ const Casts = () => {
           src={ellipse_bottom}
           alt=""
         />
-        <div className=" ">
+        <div>
           <h2
             className="cast__page-title lg:text-[64px] text-[16px] lg:mt-[110px] mt-[62px] 
           lg:px-[100px] lg:mb-[45px] mb-7 px-[22px]"
